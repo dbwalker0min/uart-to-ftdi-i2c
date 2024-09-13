@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "uart-to-ftdi-i2c"
+version = "0.1.0"
+description = ""
+authors = ["David Walker <david@eplant.bio>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyftdi = "^0.55.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
