@@ -7,9 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pyftdi = "^0.55.4"
+pyserial = "^3.5"
+loguru = "^0.7.2"
+multipledispatch = "^1.0.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+uart_to_ftdi_i2c = "uart_to_ftdi_i2c.uart_to_ftdi_i2c:main"
